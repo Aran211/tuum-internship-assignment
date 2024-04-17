@@ -31,11 +31,12 @@
 
 
 form {
+  font: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   width: 500px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px; /* Increased padding for more space */
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   background-color: #fff;
@@ -43,9 +44,14 @@ form {
 
 input, select, textarea {
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 10px; /* Increased padding for better readability */
   border-radius: 5px;
   border: 1px solid #ccc;
+  /* Add focus styles for better user experience */
+  &:focus {
+    outline: none; /* Remove default outline */
+    border-color: #a5cdd7; /* Change border color on focus */
+  }
 }
 
 input[type="submit"] {
@@ -53,6 +59,19 @@ input[type="submit"] {
   background-color: #a5cdd7;
   color: white;
   border: none;
+  padding: 15px 20px; /* Reduced padding */
+  white-space: pre-wrap;
+  color: rgb(20 9 35/var(--tw-text-opacity));
+  font-size: 0.8rem; /* Reduced font size */
+  line-height: 1.2rem; /* Reduced line height */
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 208 216/var(--tw-bg-opacity));
+  border-radius: .75rem;
+  margin-top: 2rem;
+  align-self: flex-start; /* Align to the left */
+  &:hover {
+    background-color: #8ab0c9; /* Slightly darken background on hover */
+  }
 }
 
 .ReactFlagsSelect .country-label {
@@ -63,3 +82,24 @@ textarea {
   height: 100px;
 }
 
+h1 {
+  color: black;
+  font-size: 3rem;
+  text-align: left;
+  letter-spacing: -.02em;
+  line-height: 3.75rem;
+}
+
+.checkbox{
+  color: black;
+}
+
+.contactInfo {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  letter-spacing: -.02em;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
