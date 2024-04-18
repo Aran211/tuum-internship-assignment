@@ -27,26 +27,29 @@ const ContactForm = () => {
           <input {...register('email')} placeholder="Email" />
           <input {...register('jobTitle')} placeholder="Job title" />
         </div>
+        <div className="form-row">
         <ReactFlagsSelect
           selected={selected}
-          onSelect={handleSelect}
+          onSelect={(code) => handleSelect(code)}
+          fullWidth={false}
+          placeholder="Select your country"
+          searchable 
         />
         <input {...register('companyName')} placeholder="Company name" />
+        </div>
         <div className="form-row">
           <textarea {...register('message')} placeholder="What would you like to talk about?" style={{height: '100px'}} />
         </div>
-        <div className="form-row">
+        <div className="checkboxes">
           <label>
             <input type="checkbox" {...register('acceptPolicies')} />
             By submitting this form I accept privacy policy and cookie policy. *
           </label>
-        </div>
-        <div className="form-row">
           <label>
             <input type="checkbox" {...register('receiveNewsletter')} />
             I would like to receive your newsletter.
           </label>
-        </div>
+          </div>
         <input type="submit" />
       </form>
     );

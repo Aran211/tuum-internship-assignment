@@ -7,17 +7,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <div className='content'>
       <div className='contactInfo'>
           <div>
-            <h1>Media enquiries:</h1>
+            <h4>Media enquiries:</h4>
             <p>press@tuum.com</p>
           </div>
           <div>
-            <h1>Career questions:</h1>
+            <h4>Career questions:</h4>
             <p>careers@tuum.com</p>
         </div>
       </div>
+      <div className='rightSide'>
         <ContactForm /> {/* use the ContactForm component */}
+      </div>
+      </div>
       </header>
     </div>
   );
