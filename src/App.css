@@ -3,13 +3,16 @@
   background-color: #a5cdd7;
   display: flex;
 }
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
 
 .App-header {
   background-color: #a5cdd7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -22,22 +25,21 @@ form {
   width: 667px;
   height: 603px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   border-radius: 30px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   background-color: #fff;
   
 }
 
-input, select, textarea, ReactFlagsSelect {
+input:not([type="checkbox"]):not([type="submit"]), select, textarea {
   width: 50%;
-  margin-bottom: 3px;
-  justify-content: space-between;
-  padding: 15px; /* Increased padding for better readability */
+  margin-bottom: 10px;
+  padding: 16px;
   border-radius: 10px;
   border: 2px solid #ccc;
-  box-sizing: border-box; /* add this line */
-  flex-shrink: 0; /* add this line */
+  box-sizing: border-box; 
+  flex-shrink: 0;
 }
 
 
@@ -46,18 +48,18 @@ input[type="submit"] {
   background-color: #a5cdd7;
   color: white;
   border: none;
-  padding: 15px 20px; /* Reduced padding */
+  padding: 15px 20px;
   white-space: pre-wrap;
   color: rgb(20 9 35/var(--tw-text-opacity));
-  font-size: 0.8rem; /* Reduced font size */
-  line-height: 1.2rem; /* Reduced line height */
+  font-size: 0.8rem; 
+  line-height: 1.2rem;
   --tw-bg-opacity: 1;
   background-color: rgb(167 208 216/var(--tw-bg-opacity));
-  border-radius: .75rem;
-  margin-top: 2rem;
-  align-self: flex-start; /* Align to the left */
+  border-radius: .80rem;
+  margin-top: 3rem;
+  align-self: flex-start;
   &:hover {
-    background-color: #8ab0c9; /* Slightly darken background on hover */
+    background-color: #8ab0c9;
   }
 }
 
@@ -90,14 +92,30 @@ h4, p {
   display: block;
   margin-bottom: 66px;
 }
-
-p{
-  text-decoration: underline;
+h4 {
+  color: black;
+  display: block;
+  margin-bottom: 10px; /* Reduced from 66px to 10px */
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  letter-spacing: -.02em;
 }
+
+p {
+  color: black;
+  display: block;
+  margin-bottom: 66px;
+  text-decoration: underline;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 
 .content {
   display: flex;
   flex-direction: row;
+  margin-left: 450px;
+  margin-bottom: 100px;
 }
 
 .contactInfo, .rightSide {
@@ -105,16 +123,32 @@ p{
   padding: 10px;
 }
 
-.ReactFlagsSelect__option {
-  color: black;
+.checkboxes{
+  color: black; /* Sets the text color to black */
+  font-size: 16px; /* Sets the font size to 16 pixels */
+  display: flex; /* Makes the container a flexible box layout */
+  flex-direction: column; /* Stacks the children vertically */
+  align-items: flex-start; /* Aligns items to the start (left) of the container */
 }
 
-.checkboxes{
-  color: black;
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.checkboxes input[type="checkbox"] {
+  margin-right: 10px;
 }
+
+body .react-flags-select {
+  width: 50% !important;
+  color: black !important;
+}
+
+body .react-flags-select__option {
+  width: 50% !important;
+  color: black !important;
+}
+
+body .react-flags-select__selected--flag {
+  width: 50% !important;
+  color: black !important;
+}
+
 
 

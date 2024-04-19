@@ -30,7 +30,10 @@ const ContactForm = () => {
         <div className="form-row">
         <ReactFlagsSelect
           selected={selected}
-          onSelect={(code) => handleSelect(code)}
+          onSelect={(code) => {
+            handleSelect(code);
+            setValue('country', code, { shouldValidate: true });
+          }}
           fullWidth={false}
           placeholder="Select your country"
           searchable 
@@ -49,7 +52,7 @@ const ContactForm = () => {
             <input type="checkbox" {...register('receiveNewsletter')} />
             I would like to receive your newsletter.
           </label>
-          </div>
+        </div>
         <input type="submit" />
       </form>
     );
