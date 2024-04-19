@@ -1,3 +1,13 @@
+#Project introduction
+First i 
+
+npm install react-flags-select --save
+npm install react-hook-form    
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
