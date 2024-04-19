@@ -1,8 +1,13 @@
-#Project introduction
-First i 
+Project introduction:
+First I used these commands to install the frameworks for react i use 'npm install react-flags-select --save' and 'npm install react-hook-form'. 
+And next to make sure that the computer has Node and npm installed to run this project. Next step would just be to run the command 'npm run start' and the page should open on a localhost address in the default browser.  
 
-npm install react-flags-select --save
-npm install react-hook-form    
+React is used for building the user interface and using typescript like required in the task. I used the default css to do this page.
+The react-hook-form framework i found pretty easy to implement and perfomance also to be good.
+The react-flags-select is a simple flag selector drop-down list I found that is using React. 
+
+I am sure the page can be optimized a lot and things done faster. The less different frameworks the project uses the faster the bundle compiles and overrall perfomance of the project improves. I used 2 different frameworks for my project.
+I read that the possibilities to improve the bundle are like implementing lazy loading to the page which is basically asynchronous loading, loading the  component only when its needed 
 
 
 
